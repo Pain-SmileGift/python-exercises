@@ -44,6 +44,8 @@ result=[[0 for j in range(1+W)] for i in range(1+N)]
 
 for i in range(1,N+1):
     for j in range(1,W+1):
+        if i==0:
+            continue
         if w[i-1]>j:
             result[i][j]=result[i-1][j]
         else:
